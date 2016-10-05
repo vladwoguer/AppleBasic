@@ -1,0 +1,10 @@
+9 HOME
+10 INPUT "Insira uma string: ";A$
+20 PRINT "A string tem tamanho: " + STR$(LEN(A$))
+21 PRINT "LETRA | COD ASCII"
+22 PRINT "_________________"
+30 FOR C=1 TO  LEN(A$) STEP 1
+31 LET B$ = MID$(A$,C,1)
+40 PRINT B$ + "     |" + STR$(ASC(B$)) 
+50 NEXT C
+
